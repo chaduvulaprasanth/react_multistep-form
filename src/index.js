@@ -72,7 +72,7 @@ export default class Index extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    alert("enter next page");
+    alert("enter other page");
   };
 
   step1 = () => {
@@ -154,7 +154,7 @@ export default class Index extends React.Component {
         </div>
         <div className="step2-nav">
           <div className="step2-nav-ac">
-            <p className="step2-nav-1">1</p>
+            <p className="step2-nav-1">✔</p>
             <p className="step2-nav-acc">Account Information</p>
           </div>
           <div className="step2-nav-pi">
@@ -220,11 +220,11 @@ export default class Index extends React.Component {
         </div>
         <div className="step3-nav">
           <div className="step3-nav-ac">
-            <p className="step3-nav-1">1</p>
+            <p className="step3-nav-1">✔️</p>
             <p className="step3-nav-acc">Account Information</p>
           </div>
           <div className="step3-nav-pi">
-            <p className="step3-nav-2">2</p>
+            <p className="step3-nav-2">✔️</p>
             <p className="step3-nav-pii">Personal Information</p>
           </div>
           <div className="step3-nav-pd">
