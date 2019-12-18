@@ -100,8 +100,11 @@
 label {
   display: flex;
   align-items: center;
-  color: grey;
   margin: 1rem 0;
+}
+.label-name {
+  width: 8rem;
+  color: grey;
 }
 input {
   margin-left: 1rem;

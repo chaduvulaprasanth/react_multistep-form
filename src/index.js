@@ -98,7 +98,7 @@ export default class Index extends React.Component {
         </div>
         <div className="hero">
           <label>
-            Username
+            <p className="label-name">Username</p>
             <input
               type="text"
               name="username"
@@ -107,7 +107,7 @@ export default class Index extends React.Component {
             />
           </label>
           <label>
-            Email
+            <p className="label-name">Email</p>
             <input
               type="email"
               name="email"
@@ -116,7 +116,8 @@ export default class Index extends React.Component {
             />
           </label>
           <label>
-            Password
+            <p className="label-name"> Password</p>
+
             <input
               type="password"
               name="password"
@@ -125,7 +126,8 @@ export default class Index extends React.Component {
             />
           </label>
           <label>
-            Select avatar
+            <p className="label-name"> Select avatar</p>
+
             <input
               type="file"
               name="avatar"
@@ -168,7 +170,8 @@ export default class Index extends React.Component {
         </div>
         <div className="hero">
           <label>
-            Full name
+            <p className="label-name"> Full name</p>
+
             <input
               type="text"
               name="fullname"
@@ -177,7 +180,8 @@ export default class Index extends React.Component {
             />
           </label>
           <label>
-            Country
+            <p className="label-name"> Country</p>
+
             <select onChange={this.handleChange}>
               <option value="india">Select Country</option>
               <option value="india">india</option>
@@ -186,7 +190,8 @@ export default class Index extends React.Component {
             </select>
           </label>
           <label>
-            About you
+            <p className="label-name">About you</p>
+
             <textarea
               rows="4"
               cols="50"
@@ -234,11 +239,13 @@ export default class Index extends React.Component {
         </div>
         <div className="hero">
           <label>
-            Payment
+            <p className="label-name">Payment</p>
+
             <img src="" alt="" />
           </label>
           <label>
-            Credit Card #
+            <p className="label-name">Credit Card #</p>
+
             <input
               type="number"
               name="cardno"
@@ -247,7 +254,8 @@ export default class Index extends React.Component {
             />
           </label>
           <label>
-            Experation date
+            <p className="label-name">Experation date</p>
+
             <input
               type="month"
               name="month"
@@ -256,7 +264,8 @@ export default class Index extends React.Component {
             />
           </label>
           <label>
-            Name on card
+            <p className="label-name">Name on card</p>
+
             <input
               type="text"
               name="cardname"
@@ -299,11 +308,7 @@ export default class Index extends React.Component {
     }
   };
   render() {
-    return (
-      <div className="wrapper">
-        <form onSubmit={this.handleSubmit}>{this.handleView()}</form>
-      </div>
-    );
+    return <div className="wrapper">{this.handleView()}</div>;
   }
 }
 
