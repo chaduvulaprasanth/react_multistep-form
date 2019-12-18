@@ -72,7 +72,7 @@ export default class Index extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    alert("sucessfully registerd");
+    alert("enter next page");
   };
 
   step1 = () => {
@@ -197,7 +197,7 @@ export default class Index extends React.Component {
           </label>
         </div>
         <div className="footer">
-          <p>Step 1 of 3</p>
+          <p>Step 2 of 3</p>
           <div>
             <button onClick={this.handlePrevious} className="cancel-btn">
               Previous
@@ -266,7 +266,7 @@ export default class Index extends React.Component {
           </label>
         </div>
         <div className="footer">
-          <p>Step 1 of 3</p>
+          <p>Step 3 of 3</p>
           <div>
             <button onClick={this.handlePrevious} className="cancel-btn">
               Previous
@@ -301,7 +301,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <div className="wrapper">
-        <form onSubmit={this.handleSubmit}>{this.handleView()}</form>
+        <form>{this.handleView()}</form>
       </div>
     );
   }
