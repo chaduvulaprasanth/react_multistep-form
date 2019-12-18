@@ -178,7 +178,7 @@ export default class Index extends React.Component {
           </label>
           <label>
             Country
-            <select>
+            <select onChange={this.handleChange}>
               <option value="india">Select Country</option>
               <option value="india">india</option>
               <option value="china">china</option>
