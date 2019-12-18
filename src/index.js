@@ -301,7 +301,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <div className="wrapper">
-        <form>{this.handleView()}</form>
+        <form onSubmit={this.handleSubmit}>{this.handleView()}</form>
       </div>
     );
   }
