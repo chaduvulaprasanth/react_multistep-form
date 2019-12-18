@@ -44,6 +44,32 @@ export default class Index extends React.Component {
       [name]: value
     });
   };
+  hanndleAlert = () => {
+    const {
+      email,
+      username,
+      password,
+      avatar,
+      fullname,
+      country,
+      about,
+      cardno,
+      month,
+      cardname
+    } = this.state;
+    alert(`Your registration detail: \n 
+      Email: ${email} \n 
+      Username: ${username} \n
+      Password: ${password} \n 
+      avatar: ${avatar} \n 
+      fullname: ${fullname} \n
+      country: ${country} \n 
+      about: ${about} \n 
+      cardno: ${cardno} \n
+      month: ${month} \n 
+      cardname: ${cardname}`);
+  };
+
   handleSubmit = event => {
     event.preventDefault();
     alert("sucessfully registerd");
@@ -246,7 +272,12 @@ export default class Index extends React.Component {
               Previous
             </button>
             or
-            <input className="next-step-btn" type="submit" value="Submit" />
+            <input
+              onClick={this.hanndleAlert}
+              className="next-step-btn"
+              type="submit"
+              value="Submit"
+            />
           </div>
         </div>
       </div>
