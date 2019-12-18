@@ -147,7 +147,7 @@ export default class Index extends React.Component {
               type="text"
               name="fullname"
               onChange={this.handleChange}
-              value={this.state.name}
+              value={this.state.fullname}
             />
           </label>
           <label>
@@ -166,7 +166,7 @@ export default class Index extends React.Component {
               cols="50"
               name="about"
               onChange={this.handleChange}
-              value={this.state.avatar}
+              value={this.state.about}
             />
           </label>
         </div>
@@ -174,7 +174,7 @@ export default class Index extends React.Component {
           <p>Step 1 of 3</p>
           <div>
             <button onClick={this.handlePrevious} className="cancel-btn">
-              previous
+              Previous
             </button>
             or
             <button onClick={this.handleNext} className="next-step-btn">
@@ -246,12 +246,7 @@ export default class Index extends React.Component {
               Previous
             </button>
             or
-            <input
-              onSubmit={this.handleSubmit()}
-              className="next-step-btn"
-              type="submit"
-              value="Submit"
-            />
+            <input className="next-step-btn" type="submit" value="Submit" />
           </div>
         </div>
       </div>
@@ -275,7 +270,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <div className="wrapper">
-        <form>{this.handleView()}</form>
+        <form onSubmit={this.handleSubmit}>{this.handleView()}</form>
       </div>
     );
   }
